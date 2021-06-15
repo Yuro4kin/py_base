@@ -1,0 +1,30 @@
+
+IndexError: list index out of range	
+# индекс списка вышел за пределы диапазона
+
+TypeError: 'list' object is not callable
+# Ответ: print=
+
+TypeError: can only concatenate list (not "int") to list
+# Нельзя - объединять список с числом digs2 = digs2 +7
+
+TypeError: '>' not supported between instances of 'int' and 'str'
+# Нельзя - число сравнивать с строкой
+
+ValueError: list.remove(x): x not in list
+# Метод .remove(True) - нет элемента по значению к удалению22:36 08.06.2021 
+
+Traceback (most recent call last): File "<pyshell#5>", line 1, in <module> A[100] KeyError: 100
+# Словарь - коллекция по ключу - неправильный ключ
+
+NameError: name 'd' is not defined
+# Словарь - коллекция по ключу - неправильная переменная в которой хранится ключ и значение
+
+TypeError: unhashable type: 'list'
+# Словарь - если мы укажем изменяемый тип в качестве ключа 
+
+KeyError: 'popitem(): dictionary is empty'
+# Если словарь пуст, то возникает ошибка
+
+ValueError: too many values to unpack (expected 2)
+# В кортеже 2 переменные, 3 значения
