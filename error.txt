@@ -28,3 +28,25 @@ KeyError: 'popitem(): dictionary is empty'
 
 ValueError: too many values to unpack (expected 2)
 # В кортеже 2 переменные, 3 значения
+
+TypeError: 'tuple' object does not support item assignment
+# кортеж - Не можем определенному значению присвоить другое значение
+
+TypeError: 'tuple' object doesn't support item deletion
+# кортеж - не можем удалять отдельные элементы из кортежа
+
+ValueError: tuple.index(x): x not in tuple
+# кортеж - error - нет элемента в кортеже
+
+none
+#  return x - функция возвращает
+
+TypeError: getSquare() takes 2 positional arguments but 3 were given 
+# функция def - 3 аргумента, должно быть два
+
+TypeError: getSquare() missing 1 required positional argument: 'h'
+# функция def - 1 аргумент, должен быть один
+
+TypeError: theySayHello() missing 1 required positional argument: 'msg1'
+# функция def - переопределение функции, аргумент обязательно нужно указывать
+# функция def - переопределение функции, может и ненадо в глобальной переменной True , False
