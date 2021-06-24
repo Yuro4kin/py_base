@@ -50,3 +50,47 @@ TypeError: getSquare() missing 1 required positional argument: 'h'
 TypeError: theySayHello() missing 1 required positional argument: 'msg1'
 # функция def - переопределение функции, аргумент обязательно нужно указывать
 # функция def - переопределение функции, может и ненадо в глобальной переменной True , False
+
+Игра сапер
+Traceback (most recent call last):
+  File "D:\HTML\Python\SelfEdu\python_15_programDesign_up_down.py", line 103, in <module>
+    startGame()                    # вызвали эту функцию (1-я итерация создания игры - верхний уровень)
+  File "D:\HTML\Python\SelfEdu\python_15_programDesign_up_down.py", line 90, in startGame
+    createGame(PM)             # функция будет создавать игровое поле
+  File "D:\HTML\Python\SelfEdu\python_15_programDesign_up_down.py", line 38, in createGame
+    P[i*N+j] = -1          # иначе в эту клетку запишем -1
+NameError: name 'P' is not defined
+# функция def createGame(PM): аргумент в формуле должен быть PM ____ строка 38,  line 38
+
+SyntaxError: continue not properly in loop
+# continue вне цикла смысла не имеет
+
+ValueError: too many values to unpack (expected 2)
+# y3, *z3 = [1, "a", True, 4] - не было знака *,функции с произвольным числом аргументов 
+
+TypeError: 'list' object cannot be interpreted as an integer
+# 16. Функция range ожидает два числовых значения, список передавать нельзя for x2 in range(*a)
+
+TypeError: myFuncVocabulary() takes 0 positional arguments but 3 were given
+# 16. неименованые аргументы функции
+
+indentationerror: unindent does not match any outer indentation level
+# окно gui в Idle  - ошибка возникает, когда вы используете как пробелы, так и табуляцию для отступа в коде
+
+NameError: name 'x' is not defined
+# 18. print(x) - обратились к переменной за пределами функции.
+
+name a is assigned to before global declaration
+# 18. нельзя работать с локальной переменной после объявления глобальной переменной
+
+no binding for nonlocal "x" found 
+# 18. не можем работать так с глобальной переменной
+
+TypeError: 'set' object is not subscriptable
+# 19. Обратиться по отдельному индексу к элементу множества НЕ МОЖЕМ
+
+KeyError: 2
+# 19. b5.remove(2) - данный метод возвращает ошибку при попытке удаления несуществующего значения, т.к. был удален ранее 
+
+KeyError: 'pop from an empty set'
+# 19. c = set()    c.pop()   метод pop для пустого множества
