@@ -94,3 +94,37 @@ KeyError: 2
 
 KeyError: 'pop from an empty set'
 # 19. c = set()    c.pop()   метод pop для пустого множества
+
+StopIteration
+# 20. Дошли  до конца перебираемого списка
+
+TypeError: object of type 'generator' has no len()
+# 20. Функция - len() воспользоваться не можем в генераторе выражении
+
+TypeError: 'generator' object is not subscriptable
+# 20. b3[2] - не можем получить доступ к отдельному элементу в генераторе выражении
+
+TypeError: squ() missing 1 required positional argument: 'n'
+# 21. def sq(x, n):       # функция sq может принимать один аргумент x
+
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+# 21. print( int(a6) )                    # Error - ф-ция int на входе ожидает конкретной строки а не списка из строк
+
+AttributeError: 'tuple' object has no attribute 'sort'
+# 22. # коллекции кортежи или строки - не имеют встроенного метода sort
+
+AttributeError: 'str' object has no attribute 'sort'
+# 22. # коллекции кортежи или строки - не имеют встроенного метода sort
+
+TypeError: '<' not supported between instances of 'str' and 'int'
+# 22. cортировать только однотипные элементы или только числа, или только строки, или только кортежи
+      строки не могут сравниваться с числами
+
+# 23.
+# a=[]; a.pop()                   # IndexError: pop from empty list
+# 5 / 0                           # ZeroDivisionError: division by zero
+# int("12abc")                    # ValueError: invalid literal for int() with base 10: '12abc'
+# "2" + 5                         # TypeError: can only concatenate str (not "int") to str
+
+ZeroDivisionError: division by zero
+# 23. Если делим на 0 - error:
