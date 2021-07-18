@@ -128,3 +128,38 @@ TypeError: '<' not supported between instances of 'str' and 'int'
 
 ZeroDivisionError: division by zero
 # 23. Если делим на 0 - error:
+
+FileNotFoundError: [Errno 2] No such file or directory: 'myfile1.txt'
+# 24. Если пытаемся открыть файл, которого не существует
+
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 0: invalid continuation byte
+# 24. Изменили кодировку нашего файла на windows 1251 ANSI - возникнет ошибка, указали неверную кодировку
+      нужно убрать encoding = "utf-8"
+
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+# 24. Преобразуем строку в число - и узнаем будет ли автоматически закрываться файл
+      True - несмотря на ошибки в блоке, файл гарантировано закрывается
+
+io.UnsupportedOperation: not readable
+# 24. Мы не можем читать когда файл открыт на запись
+
+KeyError: 'name2'
+# 25. Если записать вместо ключа переменную - ошибка KeyError
+
+TypeError: sum() takes at most 2 arguments (3 given)
+# 26. по умолчанию ф-ция sum в Python берет на вход список, а не набор аргументов 
+      mm = sum([1,2,4]) - нужно указывать список []
+
+TypeError: unsupported operand type(s) for +=: 'int' and 'list'
+# 26. mm = sum([1,2,4])        - укажем список [] - все работает ДЛЯ МОДУЛЯ _1_ import mymath
+                               - для модуля from mymath import sum - не работает
+
+NameError: name 'mymath' is not defined
+# 26. Пространство имен в модуле from mymath import sum - не создается
+      print(mymath .PI) - данная конструкция работать не будет, не можем обратиться к переменной PI
+      После import мы указали что импортируем один элемент sum
+
+ModuleNotFoundError: No module named 'funcs'
+# 27.  Error - при import funcs внутри модуля exp
+       Необходимо указывать имя пакета  packrand.funcs 
+       import packrand.funcs
